@@ -1,5 +1,8 @@
 # 정보처리기사 필기 기출 퀴즈
 
+링크
+https://seungyu57.github.io/jeongcheogi-quiz/
+
 정적 HTML/CSS/JavaScript로 동작하는 정보처리기사 필기 기출 퀴즈 앱입니다. GitHub Pages에 그대로 배포할 수 있으며, Firebase Authentication과 Cloud Firestore를 사용해 로그인한 사용자의 진행률을 기기 간 동기화합니다.
 
 ## Firebase 설정
