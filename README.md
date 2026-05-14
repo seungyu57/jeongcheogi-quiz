@@ -2,5 +2,3 @@
 
 링크
 https://seungyu57.github.io/jeongcheogi-quiz/
-
-구글 로그인을 통한 데이터 동기화가 가능합니다
