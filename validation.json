@@ -1,0 +1,176 @@
+[
+  {
+    "file": "2021년 1회_정보처리기사 필기 기출문제.pdf",
+    "year": 2021,
+    "round": 1,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {
+      "4": "②④",
+      "91": "①②"
+    }
+  },
+  {
+    "file": "2021년 2회_정보처리기사 필기 기출문제.pdf",
+    "year": 2021,
+    "round": 2,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {
+      "20": "②③",
+      "23": "①③④",
+      "75": "전항정답"
+    }
+  },
+  {
+    "file": "2021년 3회_정보처리기사 필기 기출문제.pdf",
+    "year": 2021,
+    "round": 3,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2022년1회_기사필기 기출문제.pdf",
+    "year": 2022,
+    "round": 1,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2022년2회_기사필기 기출문제.pdf",
+    "year": 2022,
+    "round": 2,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [
+      "원본 PDF 정답표에서 5번 답이 공란이라 공개 CBT/확정답안 자료 기준으로 ② 보완"
+    ],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2022년3회_기사필기 기출문제.pdf",
+    "year": 2022,
+    "round": 3,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2023년1회_정보처리기사필기기출문제.pdf",
+    "year": 2023,
+    "round": 1,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2023년2회_정보처리기사필기기출문제.pdf",
+    "year": 2023,
+    "round": 2,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2023년3회_정보처리기사필기기출문제.pdf",
+    "year": 2023,
+    "round": 3,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "1. 2024년1회_정보처리기사필기기출문제.pdf",
+    "year": 2024,
+    "round": 1,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2. 2024년2회_정보처리기사필기기출문제.pdf",
+    "year": 2024,
+    "round": 2,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "3. 2024년3회_정보처리기사필기기출문제.pdf",
+    "year": 2024,
+    "round": 3,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2025년1회_정보처리기사필기기출문제.pdf",
+    "year": 2025,
+    "round": 1,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2025년2회_정보처리기사필기기출문제.pdf",
+    "year": 2025,
+    "round": 2,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  },
+  {
+    "file": "2025년3회_정보처리기사 필기_기출문제.pdf",
+    "year": 2025,
+    "round": 3,
+    "questions": 100,
+    "answers": 100,
+    "missing_questions": [],
+    "missing_answers": [],
+    "answer_notes": [],
+    "multi_answer_questions": {}
+  }
+]
