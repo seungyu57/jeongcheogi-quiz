@@ -20,6 +20,7 @@ let state = {
   idx: 0,
   wrongMode: false,
   wrongList: null,
+  wrongPracticeAnswers: {},
 };
 
 let firebaseApp = null;
@@ -714,6 +715,7 @@ function startExam(exam, idx = null) {
   state.idx = targetIndex >= 0 ? targetIndex : 0;
   state.wrongMode = false;
   state.wrongList = null;
+  state.wrongPracticeAnswers = {};
   renderQuiz();
 }
 
@@ -725,6 +727,7 @@ function renderQuiz() {
   if (!questions.length) {
     state.wrongMode = false;
     state.wrongList = null;
+    state.wrongPracticeAnswers = {};
     toast("오답이 없어. 클린 그 자체");
     renderQuiz();
     return;
@@ -734,7 +737,7 @@ function renderQuiz() {
   if (state.idx < 0) state.idx = 0;
 
   const question = questions[state.idx];
-  const record = getRecord();
+  const record = state.wrongMode ? state.wrongPracticeAnswers : getRecord();
   $("#appTitle").textContent = `${exam.year}년 ${exam.round}회`;
   $("#appSub").textContent = state.wrongMode ? "오답만 다시 풀기" : "전체 문제 풀기";
   $("#qNo").textContent = `${question.no}번`;
@@ -819,6 +822,10 @@ function choose(choice) {
     updatedAtMs: Date.now(),
   });
 
+  if (state.wrongMode) {
+    state.wrongPracticeAnswers[String(question.no)] = choice;
+  }
+
   saveLocalProgress(exam, progress);
   if (currentUser && firebaseReady) {
     setSyncStatus("클라우드 저장 중", "local");
@@ -861,6 +868,7 @@ function renderList() {
     button.onclick = () => {
       state.wrongMode = false;
       state.wrongList = null;
+      state.wrongPracticeAnswers = {};
       state.idx = state.exam.questions.findIndex((question) => question.no === Number(button.dataset.no));
       renderQuiz();
     };
@@ -930,7 +938,7 @@ function bindEvents() {
 
   $("#showAnswer").onclick = () => {
     const question = currentQuestions()[state.idx];
-    const record = getRecord();
+    const record = state.wrongMode ? state.wrongPracticeAnswers : getRecord();
     markChoices(record[question.no] || "", question.answer);
     const feedback = $("#feedback");
     feedback.className = "feedback show good";
@@ -942,6 +950,7 @@ function bindEvents() {
     const record = loadLocalProgress(state.exam)?.answers || {};
     state.wrongList = state.exam.questions.filter((question) => record[question.no] && !isCorrect(record[question.no], question.answer));
     state.wrongMode = true;
+    state.wrongPracticeAnswers = {};
     state.idx = 0;
     renderQuiz();
   };
